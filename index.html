@@ -5,29 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        th, td {
+        table {
+            border-spacing: 0px;
+            border-collapse: collapse;
+            width: 50%;
+            table-layout: fixed;
+        }
+        td, th {
+            border: 1px solid black;
             padding: 0.5em;
             text-align: center;
         }
+        td {
+            background-color: rgb(164, 158, 158);
+        }
+        th {
+            background-color: rgb(218, 48, 48);
+        }
+        .empty {
+            background-color: rgb(210, 200, 200);
+        }
+        .none {
+            background-color: white;
+            border: 0px;
+        }
+        .height-match {
+            height: 70px;
+        }
     </style>
-        
 </head>
 <body>
-    <thead>
-        <tr>
-            <th></th>
-            <th>0</th>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-            <th>5</th>
-            <th>6</th>
-            <th>7</th>
-            <th>8</th>
-            <th>9</th>
-            <th>10</th>
-        </tr>
-    </thead>
+    <table>
+        <thead>
+            <tr>
+                <th class="none"></th>
+                <th>0</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2">Po</th>
+                <td rowspan="2" class="empty"></td>
+                <td>ANJ</td>
+                <td rowspan="2">ZBZ</td>
+                <td rowspan="2">KOO</td>
+                <td rowspan="2">MAT</td>
+                <td rowspan="2">EKC</td>
+                <td rowspan="2" class="empty"></td>
+                <td rowspan="2">TEV</td>
+                <td>TEV</td>
+                <td rowspan="2">TEV</td>
+            </tr>
+            <tr>
+                <td>ANJ</td>
+                <td>TEV</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Út</th>
+                <td rowspan="2" class="empty"></td>
+                <td rowspan="2" colspan="2">DUO</td>
+                <td rowspan="2">OTEC</td>
+                <td rowspan="2">CJL</td>
+                <td rowspan="2" class="empty"></td>
+                <td colspan="2">PRO</td>
+                <td colspan="2">PRO</td>
+            </tr>
+            <tr>
+                <td colspan="2">PRO</td>
+                <td colspan="2">PRO</td>
+            </tr>
+            <tr>
+                <th rowspan="3">St</th>
+                <td rowspan="3" class="empty"></td>
+                <td rowspan="3">MAT</td>
+                <td rowspan="3">STA</td>
+                <td>ANJ</td>
+                <td rowspan="3">ZBZ</td>
+                <td rowspan="3">IKT</td>
+                <td rowspan="3">EKO</td>
+                <td rowspan="3" class="empty"></td>
+                <td>NEJv</td>
+                <td rowspan="3" class="empty"></td>
+            </tr>
+            <tr>
+                <td rowspan="2">ANJ</td>
+                <td>RUJv</td>
+            </tr>
+            <tr>
+                <td>ŠPJv</td>
+            </tr>
+            <tr class="height-match">
+                <th>Čt</th>
+                <td class="empty"></td>
+                <td>KOO</td>
+                <td>PEK</td>
+                <td>OBZ</td>
+                <td>FYZ</td>
+                <td>ESA</td>
+                <td class="empty"></td>
+                <td>IKT</td>
+                <td class="empty"></td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <th rowspan="2">Pá</th>
+                <td rowspan="2" class="empty"></td>
+                <td rowspan="2">MAT</td>
+                <td rowspan="2">OTEC</td>
+                <td rowspan="2">KOO</td>
+                <td rowspan="2">CJL</td>
+                <td rowspan="2">FYZ</td>
+                <td>ANJ</td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td>ANJ</td>
+            </tr>
+    </table>
 </body>
 </html>
